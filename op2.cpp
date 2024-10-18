@@ -13,9 +13,9 @@ main()
 
 void printAsterisk(int rowSize)
 {
-	for(int row=rowSize; row>=1; row--)
+	for(int row=rowSize/2; row>=1; row--)
 	{
-		for(int col=1; col<=rowSize; col++)
+		for(int col=1; col<=rowSize/2; col++)
 		{
 			if(col<row)
 				cout<<" ";
@@ -25,14 +25,14 @@ void printAsterisk(int rowSize)
 		cout<<endl;
 	}
 
-	for(int row=rowSize; row>=1; row--)
+	for(int row=1; row<=rowSize/2; row++)
 	{
-		for(int col=rowSize; col>=1; col--)
+		for(int col=1; col<=rowSize/2; col++)
 		{
 			if(col<row)
-				cout<<"*";
-			else
 				cout<<" ";
+			else
+				cout<<"*";
 		}
 		cout<<endl;
 	}
